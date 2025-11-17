@@ -51,3 +51,14 @@ if (form) {
     }
   });
 }
+// ===== SUBMENU MOBILE =====
+const submenuParents = document.querySelectorAll(".has-submenu");
+
+submenuParents.forEach(parent => {
+  parent.addEventListener("click", (e) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault(); // evita navegação imediata
+      parent.classList.toggle("active");
+    }
+  });
+});
