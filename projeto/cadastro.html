@@ -13,43 +13,28 @@
   <script src="js/scripts.js" defer></script>
 </head>
 <body>
-  <header>
-    <button id="menu-toggle">☰</button>
-    <nav id="main-nav">
-      <ul>
+  <header class="site-header">
+    <button id="menu-toggle" aria-label="Abrir menu">☰</button>
+    <nav id="main-nav" aria-label="Navegação principal">
+      <ul class="nav-list">
         <li><a href="index.html">Início</a></li>
-        <li>
+        <li class="has-submenu">
           <a href="projetos.html">Projetos</a>
           <ul class="submenu">
             <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
             <li><a href="projetos.html#doacoes">Doações</a></li>
           </ul>
         </li>
-        <li><a href="cadastro.html">Cadastro</a></li>
+        <li class="has-submenu">
+          <a href="cadastro.html">Cadastro</a>
+          <ul class="submenu">
+            <li><a href="cadastro.html">Novo voluntário</a></li>
+            <li><a href="cadastro.html">Atualizar dados</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <h1>Cadastro de Voluntário</h1>
-    <button id="menu-toggle">☰</button>
-  <nav id="main-nav">
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li class="has-submenu">
-        <a href="projetos.html">Projetos ▾</a>
-        <ul class="submenu">
-          <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
-          <li><a href="projetos.html#doacoes">Doações</a></li>
-        </ul>
-      </li>
-      <li class="has-submenu">
-        <a href="cadastro.html">Cadastro ▾</a>
-        <ul class="submenu">
-          <li><a href="cadastro.html">Novo Voluntário</a></li>
-          <li><a href="cadastro.html">Atualizar Dados</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-  <h1>Organização Solidária</h1>
   </header>
 
   <main>
@@ -88,43 +73,4 @@
           <option value="">Selecione</option>
           <option value="MA">Maranhão</option>
           <option value="SP">São Paulo</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="RS">Rio Grande do Sul</option>
-          <option value="BA">Bahia</option>
-          <option value="PR">Paraná</option>  
-          <option value="SC">Santa Catarina</option>
-          <option value="PE">Pernambuco</option>
-          <option value="CE">Ceará</option> 
-          <option value="GO">Goiás</option>
-          <option value="DF">Distrito Federal</option>
-          <option value="AM">Amazonas</option>
-          <option value="PA">Pará</option>
-          <option value="ES">Espírito Santo</option>
-          <option value="RN">Rio Grande do Norte</option>
-          <option value="AL">Alagoas</option>
-          <option value="SE">Sergipe</option>
-          <option value="PB">Paraíba</option>
-          <option value="PI">Piauí</option>
-          <option value="MT">Mato Grosso</option>
-          <option value="MS">Mato Grosso do Sul</option>
-          <option value="RO">Rondônia</option>
-          <option value="AC">Acre</option>
-          <option value="AP">Amapá</option>
-          <option value="RR">Roraima</option>
-        </select>
-      </fieldset>
 
-      <button type="submit">Enviar</button>
-    </form>
-
-    <!-- Feedback visual -->
-    <div class="alert">⚠️ Preencha todos os campos obrigatórios.</div>
-    <div class="toast">✅ Cadastro realizado com sucesso!</div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Organização Solidária</p>
-  </footer>
-</body>
-</html>

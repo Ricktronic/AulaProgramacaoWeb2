@@ -1,6 +1,6 @@
 // scripts.js
 
-// ===== MENU RESPONSIVO =====
+// ===== MENU HAMBÚRGUER =====
 const menuToggle = document.getElementById("menu-toggle");
 const mainNav = document.getElementById("main-nav");
 
@@ -9,6 +9,20 @@ if (menuToggle && mainNav) {
     mainNav.classList.toggle("active");
   });
 }
+
+// ===== SUBMENU MOBILE =====
+// No desktop o submenu abre no hover (CSS). No mobile, abre no clique.
+const submenuLinks = document.querySelectorAll(".has-submenu > a");
+
+submenuLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault(); // evita navegação imediata
+      const parentLi = link.parentElement;
+      parentLi.classList.toggle("active");
+    }
+  });
+});
 
 // ===== FORMULÁRIO DE CADASTRO =====
 const form = document.querySelector("form");
@@ -34,31 +48,28 @@ if (form) {
 
     if (!valid) {
       // Mostra alerta
-      alertBox.style.display = "block";
-      toastBox.style.display = "none";
+      if (alertBox) {
+        alertBox.style.display = "block";
+      }
+      if (toastBox) {
+        toastBox.style.display = "none";
+      }
     } else {
       // Mostra toast de sucesso
-      alertBox.style.display = "none";
-      toastBox.style.display = "block";
+      if (alertBox) {
+        alertBox.style.display = "none";
+      }
+      if (toastBox) {
+        toastBox.style.display = "block";
 
-      // Esconde o toast depois de 3 segundos
-      setTimeout(() => {
-        toastBox.style.display = "none";
-      }, 3000);
+        // Esconde o toast depois de 3 segundos
+        setTimeout(() => {
+          toastBox.style.display = "none";
+        }, 3000);
+      }
 
       // Limpa o formulário
       form.reset();
     }
   });
 }
-// ===== SUBMENU MOBILE =====
-const submenuParents = document.querySelectorAll(".has-submenu");
-
-submenuParents.forEach(parent => {
-  parent.addEventListener("click", (e) => {
-    if (window.innerWidth <= 768) {
-      e.preventDefault(); // evita navegação imediata
-      parent.classList.toggle("active");
-    }
-  });
-});
