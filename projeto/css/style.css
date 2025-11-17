@@ -1,0 +1,39 @@
+/* style.css */
+:root {
+  /* 🎨 Paleta de cores */
+  --color-primary: #2a9d8f;
+  --color-secondary: #e76f51;
+  --color-accent: #f4a261;
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #f0f0f0;
+  --color-neutral-400: #999999;
+  --color-neutral-600: #555555;
+  --color-neutral-900: #222222;
+
+  /* 🖋 Tipografia */
+  --font-family-base: 'Roboto', Arial, sans-serif;
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-md: 1rem;      /* 16px */
+  --font-size-lg: 1.25rem;   /* 20px */
+  --font-size-xl: 2rem;      /* 32px */
+
+  /* 📐 Espaçamento modular */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  /* 🖼 Grid */
+  --grid-columns: 12;
+  --grid-gap: 16px;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  color: var(--color-neutral-900);
+  background-color: var(--color-neutral-100);
+}
