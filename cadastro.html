@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <!-- JS -->
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <button id="menu-toggle">☰</button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li>
+          <a href="projetos.html">Projetos</a>
+          <ul class="submenu">
+            <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+            <li><a href="projetos.html#doacoes">Doações</a></li>
+          </ul>
+        </li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+    <h1>Cadastro de Voluntário</h1>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required maxlength="14" />
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required maxlength="15" />
+
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required />
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required maxlength="9" />
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required />
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+          <option value="">Selecione</option>
+          <option value="MA">Maranhão</option>
+          <option value="SP">São Paulo</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="BA">Bahia</option>
+          <option value="PR">Paraná</option>  
+          <option value="SC">Santa Catarina</option>
+          <option value="PE">Pernambuco</option>
+          <option value="CE">Ceará</option> 
+          <option value="GO">Goiás</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="AM">Amazonas</option>
+          <option value="PA">Pará</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="AL">Alagoas</option>
+          <option value="SE">Sergipe</option>
+          <option value="PB">Paraíba</option>
+          <option value="PI">Piauí</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="AC">Acre</option>
+          <option value="AP">Amapá</option>
+          <option value="RR">Roraima</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Feedback visual -->
+    <div class="alert">⚠️ Preencha todos os campos obrigatórios.</div>
+    <div class="toast">✅ Cadastro realizado com sucesso!</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Organização Solidária</p>
+  </footer>
+</body>
+</html>
