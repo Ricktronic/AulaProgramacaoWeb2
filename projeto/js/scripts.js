@@ -1,4 +1,3 @@
-
 const menuToggle = document.getElementById("menu-toggle");
 const mainNav = document.getElementById("main-nav");
 
@@ -19,7 +18,6 @@ submenuLinks.forEach(link => {
     }
   });
 });
-
 
 const form = document.querySelector("form");
 const alertBox = document.querySelector(".alert");
@@ -64,7 +62,6 @@ if (form) {
         }, 3000);
       }
 
-      
       form.reset();
     }
   });
