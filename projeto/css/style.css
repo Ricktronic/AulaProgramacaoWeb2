@@ -1,6 +1,6 @@
-/* style.css */
+
 :root {
-  /* Paleta de cores */
+  
   --color-primary: #2a9d8f;
   --color-secondary: #e76f51;
   --color-accent: #f4a261;
@@ -10,7 +10,7 @@
   --color-neutral-600: #555555;
   --color-neutral-900: #222222;
 
-  /* Tipografia */
+
   --font-family-base: 'Roboto', Arial, sans-serif;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
@@ -18,7 +18,7 @@
   --font-size-lg: 1.25rem;
   --font-size-xl: 2rem;
 
-  /* Espaçamento */
+  
   --space-1: 8px;
   --space-2: 16px;
   --space-3: 24px;
@@ -26,7 +26,7 @@
   --space-5: 48px;
   --space-6: 64px;
 
-  /* Grid */
+ 
   --grid-columns: 12;
   --grid-gap: 16px;
 }
